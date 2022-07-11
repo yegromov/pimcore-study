@@ -1,0 +1,21 @@
+pimcore:
+    assets:
+        video:
+            thumbnails:
+                definitions:
+                    videoThumbforGallery:
+                        items:
+                            -
+                                method: resize
+                                arguments:
+                                    width: 320
+                                    height: 240
+                                    displayfield-2819-inputEl: '<small style=''color: red;''>width and height must be an even number</small>'
+                        medias: {  }
+                        name: videoThumbforGallery
+                        description: 'Video thumbnail for the task'
+                        group: ''
+                        videoBitrate: 0
+                        audioBitrate: 0
+                        modificationDate: 1657518717
+                        creationDate: 1657518390

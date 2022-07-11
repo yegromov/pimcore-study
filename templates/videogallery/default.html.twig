@@ -1,0 +1,18 @@
+{% extends 'layouts/layout.html.twig' %}
+
+{% block content %}
+<h1>{{ pimcore_input("headline") }}</h1>
+
+<ul>
+{% for i in pimcore_block('contentblock').iterator %}
+<li class="demo_video_thumb">
+    {{ pimcore_video('testVideo1', {
+        "thumbnail": "videoThumbforGallery",
+        width: 320,
+        height: 240,
+    }) }}
+</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
