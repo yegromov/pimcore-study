@@ -1,4 +1,7 @@
 services:
+    redis:
+        image: redis:alpine
+
     db:
         image: mariadb:10.7
         working_dir: /application
@@ -12,6 +15,7 @@ services:
             - MYSQL_PASSWORD=pimcore
 
     nginx:
+#        user: '1000:1000' # set to your uid:gid
         image: nginx:stable-alpine
         ports:
             - "80:80"
